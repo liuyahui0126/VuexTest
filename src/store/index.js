@@ -10,7 +10,7 @@ let mutations = {
   addArticle(state,art){
     let obj = {
       ...art,
-      time : Date()
+      time : new Date()
     }
     if(state.articleList.filter(item => item.title == obj.title).length == 0){
       state.articleList.push(obj)

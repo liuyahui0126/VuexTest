@@ -33,13 +33,21 @@ export default {
   methods:{
       confirm(){
           if(this.content && this.title && this.weight){
+              console.log(12);
               var obj = {
                   content:this.content,
                   title:this.title,
                   weight:this.weight
               }
               this.addArt(obj);
-          }
+              this.clear();
+          }else{
+              obj={
+                content:'xxxxxxxxxxxxxxxxxx',
+                title : title + parseInt(Math.random() * 10000),
+                weight : Math.random() * 1000
+              }
+            }
       },
       cancel(){},
       clear(){

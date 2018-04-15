@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import End from '@/components/End'
@@ -13,13 +12,12 @@ let state = {
 export default new Router({
   routes:[
     {
-      path:'/',
+      path:'/front',
       name:'helloWorld',
       component:HelloWorld
     },
     {
       path:'/end',
-      name:'end',
       component:End
     }
   ]
