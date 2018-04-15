@@ -5,20 +5,16 @@ import End from '@/components/End'
 
 Vue.use(Router)
 
-let state = {
-  articleList : []
-}
-
 export default new Router({
-  routes:[
+  routes: [
     {
-      path:'/front',
-      name:'helloWorld',
-      component:HelloWorld
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
     },
     {
-      path:'/end',
-      component:End
+      path: '/end',
+      component: End
     }
   ]
 })
